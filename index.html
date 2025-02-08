@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Bodke - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = (section.style.display === "none" || section.style.display === "") ? "block" : "none";
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            color: #00bcd4;
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nikita Bodke</h1>
+        <p><a href="#">LinkedIn</a> | +91 9623323755 | <a href="mailto:nikitabodke262@gmail.com">nikitabodke262@gmail.com</a> | <a href="#">GitHub</a></p>
+    </header>
+    <section>
+        <h2 class="toggle-btn" onclick="toggleSection('skills')">Skills ▼</h2>
+        <div id="skills" class="toggle-content">
+            <div class="image-container">
+                <img src="https://logos-download.com/wp-content/uploads/2016/09/JavaScript_Logo.png" alt="JavaScript">
+                <img src="https://logodix.com/logo/2048/java.png" alt="Java">
+                <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL">
+                <img src="https://angular.io/assets/images/logos/angular/angular.png" alt="Angular">
+                <img src="https://reactjs.org/logo-og.png" alt="React.js">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Oracle_SQL_Developer_logo.svg" alt="Oracle SQL">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Spring_Logo.svg/512px-Spring_Logo.svg.png" alt="Spring Boot">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Jenkins_logo.svg/512px-Jenkins_logo.svg.png" alt="Jenkins">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="toggle-btn" onclick="toggleSection('experience')">Experience ▼</h2>
+        <div id="experience" class="toggle-content">
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/12/Fidelity_International_logo.png" alt="Fidelity International">
+                <p>Analyst Programmer - Fidelity International (04/2024 – Present)</p>
+                <p>Developed a web application for NAV calculation for Mutual Funds.</p>
+                <p>Improved code coverage from 30% to 50% using JUnit and Mockito for TDD.</p>
+                <p>Conducted code analysis using SonarQube with CI/CD tools.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tata_Consultancy_Services_Logo.svg/512px-Tata_Consultancy_Services_Logo.svg.png" alt="TCS">
+                <p>Systems Engineer - Tata Consultancy Services (TCS) (07/2021 - 04/2024)</p>
+                <p>Developed a web application for documenting compliance with federal laws and transitioning from 4G to 5G.</p>
+                <p>Executed 200+ CRUD operations, created 20+ triggers, and developed 10+ procedures.</p>
+                <p>Designed and implemented Spring RESTful web services using Spring Boot.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="toggle-btn" onclick="toggleSection('education')">Education ▼</h2>
+        <div id="education" class="toggle-content">
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Pune_Institute_of_Computer_Technology_logo.png" alt="Pune Institute of Computer Technology">
+                <p>Bachelor of Engineering - Pune Institute of Computer Technology (08/2017 - 07/2021)</p>
+                <p>Electrical and Telecommunication Engineering – 9.14/10</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="toggle-btn" onclick="toggleSection('projects')">Personal Projects ▼</h2>
+        <div id="projects" class="toggle-content">
+            <ul>
+                <li>Developed a real-time chat application using Java and TCP Socket Communication, enabling reliable data transmission between client and server.</li>
+                <li>Designed an email sending system using SMTP protocol with data conversion modules to transform information into PDF and Excel formats for enhanced accessibility.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2 class="toggle-btn" onclick="toggleSection('achievements')">Achievements ▼</h2>
+        <div id="achievements" class="toggle-content">
+            <ul>
+                <li>Runner up in TCS internal KICKOFFS Hackathon (2022).</li>
+                <li>Two-time On-the-spot team award from TCS management.</li>
+                <li>Certified SAFe 6 Practitioner for Agile and Lean methodologies.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Nikita Bodke</p>
+    </footer>
+</body>
+</html>
